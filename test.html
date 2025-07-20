@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leaflet Marker Test</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        const map = L.map('map').setView([10.762622, 106.660172], 13);
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+        L.marker([10.762622, 106.660172])
+            .addTo(map)
+            .bindPopup("Test Marker")
+            .openPopup();
+    </script>
+</body>
+</html>
+<div>
+    <h1>Latest promotion!!!</h1>
+    <!--
+    <section class="ads-section">
+        <a href="#">
+            <div>
+                <img src="image/ad1.png"
+                     width="300" height="200"
+                     alt="New Apple Iphone 14 $999.99 0% interest + Multiple gifts">
+            </div>
+        </a>
+        <a href="#">
+            <div>
+                <img src="image/ad2.png"
+                     width="300" height="200"
+                     alt="New Apple Iphone 14 $999.99 0% interest + Multiple gifts">
+            </div>
+        </a>
+        <a href="#">
+            <div>
+                <img src="image/ad3.png"
+                     width="300" height="200"
+                     alt="New Apple Iphone 14 $999.99 0% interest + Multiple gifts">
+            </div>
+        </a>
+        <a href="#">
+            <div>
+                <img src="image/ad4.png"
+                     width="300" height="200"
+                     alt="New Apple Iphone 14 $999.99 0% interest + Multiple gifts">
+            </div>
+        </a>
+    </section>
+    -->
+</div>
+<div>
+    <h1>Flash sale!!!</h1>
+    <h1>Time left: 12:00:00</h1>
+    <div>
+        <img src="https://cdn2.cellphones.com.vn/x/media/catalog/product/3/_/3_10_120_1_1.jpg"
+             width="300" height="200"
+             alt="Apple AirPods">
+    </div>
+    <h3>Apple AirPods</h3>
+    <p class="price">$199.99</p>
+    <button href="#" class="add-to-cart">Add to cart</button>
+    <u1>
+        <li>Wireless Bluetooth earbuds from Apple</li>
+    </u1>
+</div>
