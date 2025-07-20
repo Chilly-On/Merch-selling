@@ -1,0 +1,78 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body {
+  background-color: #f7f6f5;
+}
+
+
+a {
+	text-decoration: none; /* リンクの下線を消す */
+}
+
+
+/* これがモーションのっぽい */
+span{
+  width: 150px;
+  margin: 1% auto 0;
+  position: relative; /* 基準位置　相対的 */
+  z-index: 1; /*重なりの順序を整数で指定します。0を基準として、値が大きいものほど上になります。*/
+  text-align: center;
+  display: block;
+  overflow: hidden; /*ボックスの範囲内に内容が入りきらない場合に、はみ出た部分は表示しない */
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1a1462;
+  border: 2px solid #1a1462;
+  padding: 10px;
+  position: relative;
+  display: inline;
+  text-align: center;
+  box-sizing: border-box;
+  z-index: 1; /*重なりの順序を整数で指定します。0を基準として、値が大きいものほど上になります。*/
+  width: 150px;
+  background-color: transparent;
+}
+
+button::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all .6s cubic-bezier(0.25,0.1,0.2,1);
+  -moz-transition: all .6s cubic-bezier(0.25,0.1,0.2,1);
+  transition: all .6s cubic-bezier(0.25,0.1,0.2,1);
+  content: "";
+  background-color: #2a5dbe;
+  position: absolute;
+  top: -150px;
+  right: auto;
+  left: -40px;
+  z-index: -1; /*重なりの順序を整数で指定します。0を基準として、値が大きいものほど上になります。*/
+  width: 0;
+  height: 300px;
+}
+
+button:hover::before {
+  transform: rotate(70deg);
+  width: 600px;
+}
+
+/* ========MENU CUSTOMIZE======== */
+#menu ul {
+   list-style:none;
+   padding-left:10px;
+   margin:30px 0;
+}
+
+#menu li {
+   display:inline;
+   padding-right:20px;
+}
