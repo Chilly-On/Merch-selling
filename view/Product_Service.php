@@ -79,7 +79,7 @@ $total_pages = ceil($total_items / $items_per_page);
 
     <?php include "sub_element/header.php"; ?>
 
-    <h1 class="upper-main"><?= $t["product_service"]; ?></h1>
+    <h1 class="upper-main"><?= $t["product"]; ?></h1>
 
     <main class="outer-main">
         <div class="inner-main">

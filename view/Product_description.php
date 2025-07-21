@@ -41,7 +41,7 @@ if ($stmt) {
 <body>
     <?php include "sub_element/header.php"; ?>
 
-    <h1 class="upper-main"><?= $t["product_service"]; ?></h1>
+    <h1 class="upper-main"><?= $t["product"]; ?></h1>
     <main class="outer-main">
         <div class="inner-main">
             <div class="container mt-5">

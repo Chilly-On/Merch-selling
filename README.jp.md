@@ -1,5 +1,5 @@
-# Merch selling website
-The website is inspired from the design of Nanahira's 2020 websites
+﻿# Merch selling website
+このウエブページはななひらさんの2020年のウェブページのデザインに基づけました。
 
 # Screenshot
 
